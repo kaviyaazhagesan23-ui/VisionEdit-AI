@@ -1,0 +1,4 @@
+import * as THREE from 'three'
+export const glow=()=>{const c=document.createElement('canvas');c.width=c.height=128;const g=c.getContext('2d'),r=g.createRadialGradient(64,64,0,64,64,64);r.addColorStop(0,'rgba(255,230,170,1)');r.addColorStop(.3,'rgba(245,158,11,.45)');r.addColorStop(1,'rgba(245,158,11,0)');g.fillStyle=r;g.fillRect(0,0,128,128);return new THREE.CanvasTexture(c)}
+export const surface=(base,hues,seed=1)=>{const c=document.createElement('canvas');c.width=256;c.height=128;const g=c.getContext('2d');g.fillStyle=base;g.fillRect(0,0,256,128);let s=seed;const rnd=()=>(s=(s*16807)%2147483647)/2147483647
+  for(let i=0;i<260;i++){g.fillStyle=hues[i%hues.length];g.globalAlpha=.05+rnd()*.14;g.beginPath();g.ellipse(rnd()*256,rnd()*128,20+rnd()*60,2+rnd()*12,0,0,7);g.fill()}return new THREE.CanvasTexture(c)}

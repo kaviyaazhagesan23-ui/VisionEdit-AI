@@ -1,0 +1,2 @@
+export default function SpaceHUD(){return<div className="hud2" aria-hidden="true"><i className="k tl"/><i className="k tr"/><i className="k bl"/><i className="k br"/><span className="co a">RA 05h 34m · DEC −05°</span><span className="co b">SECTOR 07 · OBS-A</span><i className="ruler"/>
+  <svg className="orb" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46"/><circle cx="50" cy="50" r="30" strokeDasharray="3 5"/><circle cx="50" cy="8" r="3"/><path d="M50 4v8M4 50h8M96 50h-8M50 96v-8"/></svg></div>}
