@@ -580,11 +580,6 @@ GitHub:
 
 https://github.com/kaviyaazhagesan23-ui/VisionEdit-AI
 
-Disclaimer
-
-This project is an educational and portfolio-oriented AI application.
-
-The models used by the project are pretrained generative and computer-vision models. Generated results may contain inaccuracies, artifacts, or unexpected visual content.
 
 Author
 
